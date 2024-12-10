@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Daily Drew Lore</title>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div class="matrix-code">
+            <h1>History of the Daily Drew</h1>
+            <p>The history of the Daily predates Adamite civilization, so we are going to have to go back...</p>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('navbar').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading navbar:', error));
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navbar = document.getElementById('navbar');
+
+                // Function to show the navbar
+                function showNavbar() {
+                    navbar.style.top = '0';
+                }
+
+                // Function to hide the navbar
+                function hideNavbar() {
+                    navbar.style.top = '-60px';
+                }
+
+                // Show the navbar when the mouse is near the top (within 20px)
+                document.addEventListener('mousemove', function (e) {
+                    if (e.clientY < 50) {
+                        showNavbar();
+                    } else {
+                        hideNavbar();
+                    }
+                });
+            });
+            </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Neon green text */
+    font-family: 'Courier New', Courier, monospace; /* Matrix-style font */
+    margin: 0;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+
+/* Navbar Styling */
+#navbar {
+    position: fixed;
+    top: -60px; /* Hide it above the viewport initially */
+    width: 100%;
+    background-color: #003300; /* Dark green background for navbar */
+    border-bottom: 1px solid #00FF00; /* Green border */
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Smooth slide down effect */
+}
+
+#navbar .navbar-brand, #navbar .nav-link {
+    color: #00FF00 !important; /* Neon green text */
+    text-transform: uppercase;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Navbar hover effect */
+#navbar .navbar-brand:hover, #navbar .nav-link:hover {
+    color: #00cc00 !important; /* Lighter green on hover */
+    transform: scale(1.1); /* Slightly increase size */
+    filter: brightness(1.5); /* Increase brightness */
+}
+
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    text-shadow: 0 0 10px #00FF00; /* Glowing effect */
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border: 1px solid #00FF00;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+/* GIF Styling */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
+
+/* Buttons */
+button {
+    background-color: #003300;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #005500;
+    transform: scale(1.1);
+}
+
+/* Input Fields */
+input[type="text"] {
+    background-color: #000;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003300;
+    color: #00FF00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #00FF00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

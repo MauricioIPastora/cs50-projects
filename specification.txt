@@ -1,0 +1,5 @@
+HTML Tags: <html>, <head>, <body>, <nav>, <a>, <div>, <h1>, <p>, <img>, <script>
+CSS Properties: background-color, color, font-family, animation, transform
+Javascript: used to create navbar, implemented into every page using "fetch()" method where it is inserted into the <div id="header"> element,
+created slide down effect on navbar using an event listener to detect mouse position
+Bootstrap: Integrated .navbar, .nav-link, .navbar-brand and responsive classes (e.g., img-fluid)
